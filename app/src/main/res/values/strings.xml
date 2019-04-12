@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Yoga</string>
+    <string name="play_str">ВОСПРОИЗВЕСТИ</string>
+    <string name="pause_str">ОСТАНОВИТЬ</string>
+</resources>

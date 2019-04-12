@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_asana_in_practice_list">
+
+    <ListView
+        android:id="@+id/AsanaListInAddAsanaInPracticeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp" />
+
+    <EditText
+        android:id="@+id/TimeInAddAsanaInPractice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewInAddAsanaInPractice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AsanaListInAddAsanaInPracticeList" />
+
+    <TextView
+        android:id="@+id/textViewInAddAsanaInPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="С"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonAddAsanaInPractice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/TimeInAddAsanaInPractice"
+        app:layout_constraintTop_toBottomOf="@+id/AsanaListInAddAsanaInPracticeList" />
+
+    <Button
+        android:id="@+id/ButtonAddAsanaInPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botton"
+        android:text="Добавить Асану"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewInAddAsanaInPractice"
+        app:layout_constraintTop_toBottomOf="@+id/AsanaListInAddAsanaInPracticeList" />
+</android.support.constraint.ConstraintLayout>

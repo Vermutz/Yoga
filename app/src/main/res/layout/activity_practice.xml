@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticeActivity">
+
+    <TextView
+        android:id="@+id/MenuNamePractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Практики"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/CreatyPractice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CreatyPractice"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/botton"
+        android:onClick="onBottomCreatyPracticeClik"
+        android:text="Создать Практику"
+        app:layout_constraintBottom_toTopOf="@+id/PracticeList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuNamePractice" />
+
+    <Button
+        android:id="@+id/PracticeList"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/botton"
+        android:onClick="onBottomPracticeListClik"
+        android:text="Список Практик"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreatyPractice" />
+
+</android.support.constraint.ConstraintLayout>
